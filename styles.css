@@ -56,6 +56,37 @@ section {
     margin: 20px;
 }
 
+.before-after-slider {
+    position: relative;
+    max-width: 600px; /* Adjust width as needed */
+    margin: 0 auto;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+}
+/*slider info*/
+.before-image, .after-image {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; /* Start with half of the width visible */
+    height: 100%;
+    overflow: hidden;
+}
+
+.overlay img {
+    width: 200%; /* Increase to allow movement */
+    transition: width 0.4s; /* Smooth transition */
+}
+/* end of infor for slider*/
+
 .product {
     border: 1px solid #dddddd;
     padding: 10px;
